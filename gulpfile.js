@@ -5,7 +5,7 @@ var gulpSourcemaps = require('gulp-sourcemaps');
 
 var del = require('del');
 
-var appDev = 'app/';
+var appDev = 'assets/app/';
 var appProd = 'public/js/app/';
 var vendor = 'public/js/vendor';
 var public = 'public';
@@ -30,9 +30,6 @@ gulp.task('clean', function() {
 gulp.task('vendor', function() {
     gulp.src('node_modules/@angular/**')
         .pipe(gulp.dest(vendor + '/@angular'));
-
-    gulp.src('node_modules/es6-shim/**')
-        .pipe(gulp.dest(vendor + '/es6-shim'));
 
     //reflect metadata
     gulp.src('node_modules/reflect-metadata/**')

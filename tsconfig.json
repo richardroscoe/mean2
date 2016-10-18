@@ -12,7 +12,7 @@
     "typeRoots": [ "node_modules/@types" ]
   },
   "include": [
-    "./app/**/*.ts"
+    "./assets/app/**/*.ts"
   ],
   "exclude": [
     "node_modules",
